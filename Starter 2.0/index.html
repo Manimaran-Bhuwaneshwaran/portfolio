@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CM Agree</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="nav-bar">
+                <div class="menu-open">
+                    <i class="fa fa-bars" onclick="showRoot()"></i>
+                </div>
+                <div class="brand-name">
+                    <h2>Chandra Mohan Agri</h2>
+                </div>
+                <div class="search-bar">
+                    <div class="search">
+                        <input type="text" placeholder="Search product" name="search" id="search">
+                        <button><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="cover">
+                <div class="catagories">
+                    <div class="catagories-close">
+                        <h2>Categories</h2>
+                        <i class="fa fa-close" onclick="closeRoot()"></i>
+                    </div>
+                    <ul id="root"></ul>
+                </div>
+                <div class="shop-by">
+                    <h2>Shop by Categories</h2>
+                    <ul id="shopy-by-cat"></ul>
+                </div>
+                <div class="auto-slider slide-auto-slider">
+                    <div class="slide-body">
+                        <div class="slide-group">
+                            <div class="slide">
+                                <img src="./assets/img/cover/cover 1.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="./assets/img/cover/cover 2.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="./assets/img/cover/cover 3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-navigation">
+                        <div class="nav-left ibs">
+                            <i class="fa fa-angle-left" onclick="slideBack()"></i>
+                        </div>
+                        <div class="nav-status">
+                            <i class="square fill fa fa-circle-o"></i>
+                            <i class="square fill fa fa-circle-o"></i>
+                            <i class="square fill fa fa-circle-o"></i>
+                        </div>
+                        <div class="nav-right ibs">
+                            <i class="fa fa-angle-right" onclick="slideForward()"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-products">
+                <div class="auto-slider">
+                    <div class="products">
+                        <div class="products-title ib-90">
+                            <h2>Featured Products <i class="fa fa-star"></i></h2>
+                            <div class="slide-control ibr-10">
+                                <i class="fa fa-angle-left" onclick="moveFPleft()"></i>
+                                <i class="fa fa-angle-right" onclick="moveFPRight()"></i>
+                            </div>
+                        </div>
+                        <div class="product-elements-group">
+                            <div class="product-elements">
+                                <!-- <div class="body-el body-el-g1">
+                                    <div class="image"> <img
+                                            src="./assets/img/products/"
+                                            alt="Surya Z-Mob Zinc Mobilising Biofertilizer"> </div>
+                                    <div class="content">
+                                        <p>Surya Z-Mob Zinc Mobilising Biofertilizer</p>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="new-arrivals">
+                <div class="auto-slider">
+                    <div class="products">
+                        <div class="products-title ib-90">
+                            <h2>New Arrivals <i class="fa fa-book"></i></h2>
+                            <div class="slide-control ibr-10">
+                                <i class="fa fa-angle-left" onclick="moveNAleft()"></i>
+                                <i class="fa fa-angle-right" onclick="moveNARight()"></i>
+                            </div>
+                        </div>
+                        <div class="product-elements-group">
+                            <div class="product-elements">
+                                <!-- <div class="body-el body-el-g1">
+                                    <div class="image"> <img
+                                            src="./assets/img/products/"
+                                            alt="Surya Z-Mob Zinc Mobilising Biofertilizer"> </div>
+                                    <div class="content">
+                                        <p>Surya Z-Mob Zinc Mobilising Biofertilizer</p>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="contact">
+                <div class="contact-title">
+                    <h3>Contact Us</h3>
+                </div>
+                <div class="mobile-number contact-el ">
+                    <p><i class="fa fa-phone"></i> +91 9876543210</p>
+                </div>
+                <div class="address contact-el ">
+                    <p><i class="fa fa-globe"></i> XYZ, Abc stree, MNOP....</p>
+                </div>
+            </div>
+            <div class="quick-links">
+                <div class="links-title">
+                    <h3>Quick Links</h3>
+                </div>
+                <div class="link-group">
+                    <a href="" target="_blank" rel="noopener noreferrer">link goes here</a>
+                    <a href="" target="_blank" rel="noopener noreferrer">link goes here</a>
+                    <a href="" target="_blank" rel="noopener noreferrer">link goes here</a>
+                    <a href="" target="_blank" rel="noopener noreferrer">link goes here</a>
+                    <a href="" target="_blank" rel="noopener noreferrer">link goes here</a>
+                </div>
+            </div>
+            <div class="location">
+                <div class="location-title">
+                    <h3>Reach Us</h3>
+                </div>
+                <div class="map-view">
+                    <iframe
+                            style="border:0"
+                            loading="lazy"
+                            allowfullscreen
+                            referrerpolicy="no-referrer-when-downgrade"
+                            src="https://maps.google.com/maps?q=Chandramohan+Organic+Fertilizer&output=embed">
+                            </iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+
+</html>
