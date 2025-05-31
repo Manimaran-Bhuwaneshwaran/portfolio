@@ -143,7 +143,7 @@ for (const [key, value] of Object.entries(categories_data_map)) {
 				</div>
 			</div>`;
 		}
-		root.innerHTML += `<div class="cbody"><li><i class="fa fa-caret-right"></i> ${ikey}</li>
+		root.innerHTML += `<div class="cbody"><li onclick="window.open('./product/index.html', '_self')" ><i class="fa fa-caret-right"></i> ${ikey}</li>
 		<img alt="${ikey}"></div>`;
 		
 		outString += `<div class="sbbody"><li><i class="fa fa-caret-right"></i> ${ikey}</li>
